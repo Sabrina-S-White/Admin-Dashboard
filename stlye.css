@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 85%;
+}
