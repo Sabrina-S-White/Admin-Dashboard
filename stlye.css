@@ -14,4 +14,81 @@ body {
     border: 1px solid black;
     grid-template-columns: 20% 80%;
     grid-template-rows: 15% 85%;
+    background-color: aliceblue;
+    border: 1px solid green;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: blue;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: green;
+}
+
+.headerTop {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+}
+
+.headerTop input {
+    width: 40%;
+    border-radius: 25px;
+}
+
+.headerBot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 10px 10px 10px;
+}
+
+
+.main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: bisque;
+}
+
+.articles {
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.projectHeader {
+    grid-row: 1 / 2;
+}
+
+.projectTiles {
+    grid-row: 2 / 4;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 10px;
+    
+}
+
+.tile {
+    border: 2px solid red;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+
 }
